@@ -1,0 +1,21 @@
+package: github.com/naufaldinta13/graphic-api
+import:
+  - package: github.com/naufaldinta13/cuxs/cuxs
+  - package: github.com/naufaldinta13/cuxs/env
+  - package: github.com/naufaldinta13/cuxs/mailer
+  - package: github.com/naufaldinta13/cuxs/orm
+  - package: github.com/naufaldinta13/cuxs/validation
+  - package: github.com/naufaldinta13/cuxs/common
+    subpackages:
+      - faker
+      - log
+  - package: github.com/Sirupsen/logrus
+    version: v0.11.2
+  - package: github.com/robfig/cron
+    version: v1.1
+testImport:
+  - package: github.com/stretchr/testify
+    version: v1.1.4
+    subpackages:
+      - assert
+
